@@ -1,3 +1,52 @@
+* {
+  border: 1px solid teal;
+}
+
 body {
   background: blanchedalmond;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/* main */
+.b {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+/* header and footer */
+.a {
+  background-color: blue;
+  flex-grow: 2;
+}
+
+.c {
+  background-color: red;
+  flex-grow: 2;
+}
+
+@media(min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .b {
+    max-width: 80%;
+  }
+
+  .a {
+    width: 100%;
+  }
+
+  .c {
+    width: 5%;
+  }
 }
